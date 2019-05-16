@@ -1,0 +1,227 @@
+/* Anna Leuszler 7th hour*/
+body {
+	text-align: left;
+	font-family: tahoma, arial, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: white;
+	background: url("images/sugarcube.jpg")
+	}
+figure		{
+	text-align: center;
+	color: white;
+	margin: 0;
+		}
+
+		
+img		{
+		border-color: black;
+		border-style: solid;
+		
+		}
+
+h1	{
+	text-align: center;
+}
+h2		{
+	text-align: left;
+}
+		
+table{
+	width: 80%;
+	margin:1em;
+	margin-left: auto;
+	margin-right:auto;
+	padding:0;
+	border-collapse: collapse;
+	}
+	
+th,td	{
+	border: 1px solid black;
+	padding:1em;
+	}
+th	{
+	border-bottom: 1px solid black;
+	padding:1em;
+	background: white;
+	}
+		
+ol	{
+	list-style-type: upper-alpha;
+	}
+
+ul 	{
+	list-style-type: square;
+	}
+	
+#box	{
+	border-width: 0.50em;
+	border-style: dotted;
+	border-color: black;
+	width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+	padding:1em;
+	font-family: "Century Gothic", arial, euphemia, sans-serif;
+	background-color: white;
+	position: relative;
+				
+		}
+#content	{
+	display: block;
+	left: 13em;
+	top: 2em;
+}
+#coffee {
+	font-weight: bold;
+	color: white;
+		}
+#contact {
+	    text-align:right;
+	     margin-left: auto;
+		 width: 11em;
+		 background-color: white;
+		}
+#content{
+	display: block;
+	margin-left: 13em;
+	margin-top: 2em;
+	
+}
+nav	{
+			text-align: center;
+			background: white;
+			margin: 0em;
+			margin-left: auto;
+			margin-right: auto;
+			}
+#mainnav	{
+	padding: 0.25em;
+	padding-left: 0.5em;
+	width: 9em;
+	position: absolute;
+}
+#mainnav a{
+	text-decoration:none;
+}
+
+#mainnav li{
+	list-style-type: none;
+	padding: 0.25em 0.25em 0.25em 1em;
+	margin: 0.25em 0;
+	background: white;
+	position: relative;
+}
+#mainnav ul{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 2em;
+}
+#mobilelink	{
+	text-align:right;
+	padding: 0.25em;
+}
+			
+ a:link {
+	color: green;
+	}
+ a:visited {
+	color: Black;
+	}
+ a:hover {
+	color: yellow;
+	font-weight: bold;
+	}
+ a:active {
+	color: yellow;
+	font-style: italic;
+	}
+
+.company{
+	font-style: italic;
+		}
+		
+.cotcol	{
+	background: red;
+	width: 15%;
+		}
+.desc	{
+	padding: 0;
+	margin: 1em 0 0 2em
+		}
+.firstcol	{
+	background: orange;
+	width: 25%;
+		}
+.firstrow 	{
+	background-color: orange;
+	color: black;
+	font-size: 2em;
+	text-align: center;
+		}
+.picture img	{
+	display: block;
+	float: right;
+	padding: 0;
+	margin-top: 2em;
+	margin-right: 3em;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+}
+
+.movie {
+	display: block;
+	float: right;
+	padding: 0;
+	margin-top: 0em;
+	margin-right: 3em;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+}
+
+.row 	{
+	display: table-row;
+		}
+.row div	{
+	display: table-cell;
+	padding: 0.25em 0.5em;
+		}
+
+
+
+.slogan {
+		text-align: center;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: CuprumFFURegular, georgia, "times new roman", times, serif;
+		font-size: 1.5em;
+		color: black;
+		}
+.desktop{
+		display:block;
+}
+.mobile{
+	display: none;
+}
+@media only screen and (max-device-width: 1024px) {
+	  figure {
+		  display: none;
+	  }
+	  #content {
+		  margin: 0.25em;
+	  }
+	  #mainnav	{
+		  padding: 0.25em;
+		  width: 100%;
+		  position: static;
+		  left: 0;
+	  }
+	  .desktop	{
+		  display: none;
+	  }
+	  .mobile	{
+		  display: block;
+	  }
+  }

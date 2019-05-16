@@ -1,0 +1,39 @@
+/* Business Project -- Forms */
+/* Anna Leuszler Business Form Unit J */
+input:focus, textarea:focus {
+	background: rgb(219, 207, 198);
+}
+#contactinfo label {
+  display: block;
+  position: relative;
+  margin: 12px 0;
+  }
+ #orderinfo	{
+	 margin-right:25px
+ }
+#nameinput, #addressinput, #cityinput, #emailinput {
+  width: 30em;
+  }
+ #phoneinput, #zipinput	{
+	 width: 20em;
+ }
+ #stateinput	{
+	 width: 5em;
+ }
+ #contactinfo input	{
+	position: absolute;
+	left: 100px;
+}
+#submit{
+	background: white;
+	font-size: 1.25em;
+}
+#submitbutton	{
+	border: none;
+	background: white;
+	padding: 0.5em 0 0 0;
+	text-align: center;
+}
+
+	
+	

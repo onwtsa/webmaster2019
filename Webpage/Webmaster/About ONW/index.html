@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="Just Brew It: Der beste kaffee in der gegend"/>
+  <title> Just Brew It Coffee </title>
+   <link rel="stylesheet" type="text/css" media="screen" href="business.css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<script src="scripts/modernizr-1.6.min.js"></script>
+<meta name="viewport" content="width=devive-width" />
+<STYLE TYPE="text/css">
+<!--
+
+BODY{
+overflow-x:hidden;
+}
+
+.s1
+{
+  position  : absolute;
+  font-size : 10pt;
+  color     : white;
+  visibility: hidden;
+}
+
+.s2
+{
+  position  : absolute;
+  font-size : 18pt;
+  color     : black;
+	visibility : hidden;
+}
+
+.s3
+{
+  position  : absolute;
+  font-size : 14pt;
+  color     : rgb(25,90,85);
+	visibility : hidden;
+}
+
+.s4
+{
+  position  : absolute;
+  font-size : 12pt;
+  color     : grey;
+	visibility : hidden;
+}
+
+//-->
+</STYLE>
+
+  </head>
+  <body>
+<div id="box">
+<figure class="desktop">	
+	 <figure>
+	 <a href="index.html">
+	<img src="images/banner.jpg" width="750" height="150" alt="Zelda Dean" title=" " /> </a>
+	
+	</figure>
+	</figure>
+	
+	
+	<nav>
+		<a href= "index.html">Biography </a> |
+		<a href= "aboutus.html">About Us </a> |
+		<a href= "employees.html">Tour dates</a>|
+		<a href= "form.html"> Fan Message Board </a> |
+		<a href= "merch.html"> Merchandise </a> |
+		<a href="http://stuweb.olatheschools.com/~s977all30/" target="_blank">Splash Page </a> |
+		
+	</nav>
+	
+	  
+	<h3 class="slogan">The Best in the Country! </h3>
+	<p> <span class="company">Zelda Dean </span> aims to please here wonderful audience. She has been all around the world inpiring others and donating to helping young singers like herself. </p>
+ 
+  
+	<p> Zelda is going on a world tour in 2020! We hope to see all of you wonderful p people. She has a very big giving heart and wants to help all of those around her. </p>
+
+	<p> Email us with any questions or concerns. <a href="mailto:leuszler.tsa@gmail.com">Click Here</A> </p>
+	<section>
+	<h3> Helpful Links </h3>
+	<ol>
+	<li><a href="https://www.ranker.com/list/best-country-artists-2019/ranker-music" target="_blank"> Top Country Music Artists</a> </li>
+	<li><a href="https://www.cmaworld.com/foundation/" target="_blank"> CMA Foundation  </a> </li>
+	</ol>
+	</section>
+	
+<p id="contact">
+	<span id= "coffee">Anna L., Owner</span><br />
+	<span itemprop="name"> Just Brew It </span> <br />
+	<span itemprop="address" itemtype="http://www.data-vocabulary.org/Address" itemscope="itemscope"></span>
+	<span itemprop= "street-address">21300 College Blvd </span>
+	<span itemprop="locality">Olathe </span>
+	<span itemprop="region">KS </span>
+	<span itemprop="postal-code">66061 </span> <br />
+	<span itemprop="tel">(913) 256-8572 </span>
+	</p>
+	
+
+	<p id="mobilelink"> <a href="mobile/index.html"> Switch to mobile site </a></p>
+
+
+	</div>
+	
+<DIV ID="div1" CLASS="s1">*</DIV>
+<DIV ID="div2" CLASS="s2">*</DIV>
+<DIV ID="div3" CLASS="s3">*</DIV>
+<DIV ID="div4" CLASS="s4">*</DIV>
+
+
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript">
+
+/*
+Script by Mike McGrath- http://website.lineone.net/~mike_mcgrath
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+//Updated Feb 20th, 08 by JavaScriptKit.com: Script now compatible in IE7/FF 
+
+var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body //create reference to common "body" across doctypes
+
+var nav = (!document.all || window.opera);
+var tmr = null;
+var spd = 50;
+var x = 0;
+var x_offset = 5;
+var y = 0;
+var y_offset = 15;
+
+document.onmousemove = get_mouse; 
+
+function get_mouse(e)
+{    
+  x = (nav) ? e.pageX : event.clientX+standardbody.scrollLeft;
+  y = (nav) ? e.pageY : event.clientY+standardbody.scrollTop;
+  x += x_offset;
+  y += y_offset;
+  beam(1);     
+}
+
+function beam(n)
+{
+  if(n<5)
+  {
+				document.getElementById('div'+n).style.top=y+'px'
+				document.getElementById('div'+n).style.left=x+'px'
+				document.getElementById('div'+n).style.visibility='visible'
+    n++;
+    tmr=setTimeout("beam("+n+")",spd);
+  }
+  else
+  {
+     clearTimeout(tmr);
+     fade(4);
+  }   
+} 
+
+function fade(n)
+{
+  if(n>0) 
+  {
+				document.getElementById('div'+n).style.visibility='hidden'
+    n--;
+    tmr=setTimeout("fade("+n+")",spd);
+  }
+  else clearTimeout(tmr);
+} 
+
+// -->
+</SCRIPT>
+
+<form name="random"><input type="text" name="random" size=78 value=""></form>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// Copyright 1996 - Tomer and Yehuda Shiran
+// This example will appear in our forthcoming book on JavaScript.
+// Feel free to "steal" this code provided that you leave this notice as is.
+// Additional examples from the book can be found at //http://www.geocities.com/SiliconValley/9000/
+// For more information contact Tomer or Yehuda Shiran <yshiran@iil.intel.com>
+
+function getMessage() {
+// create array of coffee quotes
+var ar = new Array(6)
+ar[0] = "Never trust anyone who doesn't drink coffee."
+ar[1] = "Coffee connects us in so many ways - to each other, to our senses, and to the earth that supports the coffee trees."
+ar[2] = "Anything that can go wrong will go wrong."
+ar[3] = "Two wrongs are only the beginning."
+ar[4] = "If at first you don't succeed, destroy all evidence that you tried."
+ar[5] = "Success always occurs in private, and failure in full view."
+
+var now = new Date()
+var sec = now.getSeconds()
+document.random.random.value="Coffee Quotes: " + ar[sec % 6]
+}
+getMessage()
+//-->
+</SCRIPT>
+ </body>
+ </html>
+
+      

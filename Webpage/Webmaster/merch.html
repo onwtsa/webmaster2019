@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset="utf-8"/>
+    <meta name="description" content="Just Brew It: Der beste kaffee in der gegend"/>
+  <title> Merchandise </title>
+   <link rel="stylesheet" type="text/css" media="screen" href="business.css" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+  </head>
+  <body>
+<div id="box">	
+	 <figure>
+	<img src="images/banner.jpg" width="750" height="150" alt="Just Brew It Coffee" title=" "/>
+	
+	</figure>
+	
+	
+	<nav>
+	<p id="nav">
+		<a href= "index.html">Biography </a> |
+		<a href= "aboutus.html">About Us </a> |
+		<a href= "employees.html">Tour dates</a>|
+		<a href= "form.html"> Fan Message Board </a> |
+		<a href= "merch.html"> Merchandise </a> |
+		<a href="index.htm" target="_blank">Splash Page </a> |
+		
+	</p>
+	</nav>
+	
+<p> These items are not available yet. This is just a preview of what is going to come during tour. This is all the <br />2019-2010 tour merchandise! </p>
+<script>
+
+/*
+Count down until any date script-
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+
+//change the text below to reflect your own,
+var before="Merchandise presale starts"
+var current="Today you can order. Hurry before they sell out!!"
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+function countdown(yr,m,d){
+var today=new Date()
+var todayy=today.getYear()
+if (todayy < 1000)
+todayy+=1900
+var todaym=today.getMonth()
+var todayd=today.getDate()
+var todaystring=montharray[todaym]+" "+todayd+", "+todayy
+var futurestring=montharray[m-1]+" "+d+", "+yr
+var difference=(Math.round((Date.parse(futurestring)-Date.parse(todaystring))/(24*60*60*1000))*1)
+if (difference==0)
+document.write(current)
+else if (difference>0)
+document.write("Only "+difference+" days until "+before)
+}
+//enter the count down date using the format year/month/day
+countdown(2019,6,8)
+</script>
+	
+<section>
+	   <table class="employee">
+	   <colgroup>
+	   <col class="firstcol" />
+	   <col class="roomcols" span="4" />
+	   <col class="cotcol" />
+	   </colgroup>
+		<thead>
+		<tr>
+			<tr class="firstrow"><th colspan="4">Zelda Dean Merchandise</th>
+			</tr>
+			
+			<tr>
+			 <th> Design </th>
+			 <th> Price </th>
+			 <th> Availability </th>
+			
+		</tr>
+		</thead>
+			<tbody>
+			<tr>
+				<td> <img src="images/rain.jpg"> </td>
+				<td> $65 </td>
+				<td> Coming 6/8/19  </a></td>
+			 
+			</tr>
+				<tr>
+				<td> <img src="images/waterbottle.jpg"> </td>
+				<td> $25</td>
+				<td> Coming 6/8/19 </td>
+			<tr>
+				<td> <img src="images/sticker.jpg"> </td>
+				<td> $2.50</td>
+				<td> Coming 6/8/19</td>	
+		
+
+		
+				</tr>
+			<tbody>
+		</table>
+	   <tbody>
+	   </tbody>
+	   </table>
+      </section>
+	
+	
+	</div>
+	
+
+ </body>
+ </html>
+ 
